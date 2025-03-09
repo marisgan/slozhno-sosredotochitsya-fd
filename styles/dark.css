@@ -10,9 +10,3 @@
   --button-color-hover: rgba(255, 0, 112, 0.4);
   --page-bg-image: url(../images/cover-image-dark.png);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --subtitle-color: #000028;
-    }
-}
