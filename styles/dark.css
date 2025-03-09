@@ -11,4 +11,8 @@
   --page-bg-image: url(../images/cover-image-dark.png);
 }
 
-
+@media (prefers-color-scheme: dark) {
+  :root {
+    --subtitle-color: #000028;
+    }
+}

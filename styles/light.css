@@ -29,7 +29,7 @@
     --page-bg-image: url(../images/cover-image-light.png);
     }
   
-  .theme-light .header__record {
+  .header__record {
     display: none;
   }
 

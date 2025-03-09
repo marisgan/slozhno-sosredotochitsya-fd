@@ -4,7 +4,7 @@
   background-color: var(--bg-color, #000028);
   color: var(--text-color, #F1B2CE);
   font-size: var(--main-font-size, 18px);
-  font-family: var(--main-font, monospace);
+  font-family: var(--main-font, monospace), monospace;
   line-height: var(--line-height, 1.3);
   background-image: var(--page-bg-image);
   background-size: cover;
@@ -32,7 +32,7 @@
   color: var(--header-title-color, #DB00FF);
   font-weight: var(--accent-weight, bold);
   text-transform: lowercase;
-  line-height: 0.9;
+  line-height: 0.83;
 }
 
 .header__title {
@@ -105,6 +105,8 @@
 }
 
 .header__theme-menu-button {
+  appearance: none;
+  border: 1px solid transparent;
   padding: 2px 13px 4px;
   color: var(--button-color);
   line-height: 1;
@@ -181,6 +183,10 @@
   line-height: var(--line-height);
 }
 
+.advices h3 {
+  margin-block-end: 20px;
+}
+
 h4.section__card-title {
   font-weight: 400;
 }
@@ -244,10 +250,6 @@ h4.section__card-title {
 }
 
 @media (width >= 768px) {
-  :root {
-    --page-padding: 20px;
-  }
-
   .page {
     gap: 60px;
   }
@@ -257,8 +259,15 @@ h4.section__card-title {
   }
 
   .title {
-    margin-inline-start: -20px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__title {
+    margin-inline-start: -20px;
+  }
+
+  .footer__title {
+    text-align: center
   }
 
   .header__subtitle {
